@@ -1,9 +1,9 @@
 #include "common.h"
 
 char birdChar[BIRD_HEIGHT][BIRD_WIDTH] = {
-	' ', '-', '-', '-', ' ',
-	'|', ' ', '@', ' ', '<',
-	' ', '-', '-', '-', ' '
+	' ', '/', '~', '~', '~', '\0',
+	')', ' ', ' ', '@', ' ', '<',
+	'\0', '\\', '_', '_', '/', '\0'
 };
 
 void BirdInit() {
@@ -11,8 +11,6 @@ void BirdInit() {
 	gBird.top = 10;
 
 	gBird.v = 0;
-	gBird.g = GRAVITY;
-
 }
 
 void BirdFly() {
@@ -20,7 +18,6 @@ void BirdFly() {
 }
 
 char BirdGetCharFromPoint(int x, int y) {
-	// 数组安全
 	if (x >= 0 && x < BIRD_WIDTH && y >= 0 && y < BIRD_HEIGHT)
 		return birdChar[y][x];
 	return ' ';

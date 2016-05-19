@@ -74,7 +74,7 @@ void Render() {
 	
 	int i = 0;
 	while (str[i] != '\0') {
-		PaintPoint(WIDTH * 0.48 + i, HEIGHT * 0.1, str[i], FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY | BACKGROUND_RED);
+		PaintPoint(WIDTH * 0.48 + i, HEIGHT * 0.1, str[i], FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY | BACKGROUND_RED | BACKGROUND_INTENSITY);
 		++i;
 	}
 	

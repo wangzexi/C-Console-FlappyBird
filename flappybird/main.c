@@ -1,6 +1,5 @@
 #include "common.h"
 
-
 int main() {
 	
 	Init();
