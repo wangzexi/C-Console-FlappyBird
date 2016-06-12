@@ -17,8 +17,7 @@ void Ready() {
 }
 
 void Process() {
-	int key = GetAsyncKeyState(VK_SPACE);
-	if (key && 1) {
+	if (GetAsyncKeyState(VK_SPACE)) {
 		switch (gStatus)
 		{
 		case READY:
